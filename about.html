@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Lumina Events</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header container">
+    <a class="logo" href="index.html">Lumina Events</a>
+    <nav class="nav">
+      <button id="nav-toggle-2" class="nav-toggle" aria-label="Open menu">☰</button>
+      <ul class="nav-list" id="nav-list-2">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="btn btn-outline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-hero container">
+      <h1>We plan. We cater. You celebrate.</h1>
+      <p>Our approach balances creativity, logistics and culinary excellence to produce events that feel effortless and curated.</p>
+    </section>
+
+    <section class="about-details container">
+      <div class="about-column">
+        <h2>Who we are</h2>
+        <p>Lumina Events is a full-service event planning and catering company based in Johannesburg. Our team includes experienced planners, chefs and production partners. We specialise in custom menus, on-site execution and personalised event design.</p>
+
+        <h3>What we do</h3>
+        <ul class="checklist">
+          <li>Full event planning & design</li>
+          <li>Bespoke catering & menu development</li>
+          <li>Venue sourcing & vendor management</li>
+          <li>Day-of coordination & production</li>
+        </ul>
+
+        <a href="services.html" class="btn btn-link">See full service list →</a>
+      </div>
+
+      <aside class="about-column">
+        <h3>Clients we've worked with</h3>
+        <ul class="clients">
+          <li>BrightCorp (Annual Gala)</li>
+          <li>Serene Weddings</li>
+          <li>Market & Co (Brand Launch)</li>
+          <li>Private Celebrations & Families</li>
+        </ul>
+
+        <h3>Gallery — our recent work</h3>
+        <!-- CAROUSEL -->
+        <div class="carousel" id="work-carousel" aria-roledescription="carousel">
+          <button class="carousel-btn prev" data-action="prev" aria-label="Previous slide">‹</button>
+          <div class="carousel-track">
+            <figure class="carousel-item">
+              <img src="https://picsum.photos/id/1018/1200/700" alt="Elegant table setup" />
+              <figcaption>Elegant table setup — outdoor wedding</figcaption>
+            </figure>
+            <figure class="carousel-item">
+              <img src="https://picsum.photos/id/1025/1200/700" alt="Buffet display" />
+              <figcaption>Seasonal buffet station</figcaption>
+            </figure>
+            <figure class="carousel-item">
+              <img src="https://picsum.photos/id/1043/1200/700" alt="Cocktail reception" />
+              <figcaption>Cocktail reception design</figcaption>
+            </figure>
+          </div>
+          <button class="carousel-btn next" data-action="next" aria-label="Next slide">›</button>
+          <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+
+        <div class="cta-compact">
+          <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo inverse" href="index.html">Lumina Events</a>
+        <p>Event planning & catering — creating memorable celebrations.</p>
+      </div>
+
+      <div class="footer-links">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <p>Email: <a href="mailto:hello@luminaevents.co">hello@luminaevents.co</a></p>
+        <p>Phone: <a href="tel:+27123456789">+27 12 345 6789</a></p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© <span id="year-2"></span> Lumina Events. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

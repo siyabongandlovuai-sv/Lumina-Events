@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Lumina Events</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header container">
+    <a class="logo" href="index.html">Lumina Events</a>
+    <nav class="nav">
+      <button id="nav-toggle-4" class="nav-toggle" aria-label="Open menu">☰</button>
+      <ul class="nav-list" id="nav-list-4">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active btn btn-outline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container contact-page">
+    <section class="contact-intro">
+      <h1>Get in touch</h1>
+      <p>Tell us about your event — date, guest count, venue (if known) and any special requests.</p>
+    </section>
+
+    <section class="contact-grid">
+      <form id="contact-form" class="contact-form" novalidate>
+        <label>
+          Full name
+          <input type="text" name="name" required placeholder="Your name" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="you@example.com" />
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" name="phone" placeholder="+27 12 345 6789" />
+        </label>
+
+        <label>
+          Event date (approx.)
+          <input type="date" name="date" />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Tell us about your event..." required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <button type="reset" class="btn btn-outline">Reset</button>
+        </div>
+
+        <div id="form-msg" class="form-msg" aria-live="polite"></div>
+      </form>
+
+      <aside class="contact-details">
+        <h3>Contact details</h3>
+        <p>Email: <a href="mailto:hello@luminaevents.co">hello@luminaevents.co</a></p>
+        <p>Phone: <a href="tel:+27123456789">+27 12 345 6789</a></p>
+        <p>Address: 42 Gallery Lane, Johannesburg</p>
+
+        <h4>Office hours</h4>
+        <p>Mon–Fri: 9:00 — 17:00</p>
+        <p>Sat: by appointment</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo inverse" href="index.html">Lumina Events</a>
+        <p>Event planning & catering — creating memorable celebrations.</p>
+      </div>
+
+      <div class="footer-links">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <p>Email: <a href="mailto:hello@luminaevents.co">hello@luminaevents.co</a></p>
+        <p>Phone: <a href="tel:+27123456789">+27 12 345 6789</a></p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© <span id="year-4"></span> Lumina Events. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
